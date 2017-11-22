@@ -8,7 +8,7 @@ Thus, I develop this tool to avoid the condition happens.
 Normally you just need to call the get_locks function before using Pytorch on GPUs.
 ```python 2.7
 from locks_for_pytorch_on_gpus import acquire_locks, DeviceIsBusyException
-locks, msg = acquire()
+locks, msg = acquire_locks()
 print msg
 try:
     acquire_locks()
