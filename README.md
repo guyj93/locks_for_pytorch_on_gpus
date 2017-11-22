@@ -11,10 +11,15 @@ Just download the code and copy the dir "locks_for_pytorch_on_gpus" into your pr
 
 ## Usage
 Normally you just need to call the get_locks function before using Pytorch on GPUs.
-```python 2.7
-from locks_for_pytorch_on_gpus import acquire_locks, DeviceIsBusyException
+For example, open an python console and input:
+```python2.7
+from locks_for_pytorch_on_gpus import acquire_locks
 locks, msg = acquire_locks()
 print msg
+```
+Then, open another python console and input:
+```python2.7
+from locks_for_pytorch_on_gpus import acquire_locks, DeviceIsBusyException
 try:
     acquire_locks()
 except DeviceIsBusyException, e:
