@@ -5,6 +5,11 @@ And the dead lock will cause the GPU become not usable until the whole system re
 
 Thus, I develop this tool to avoid the condition happens.
 
+## Installation
+As an temporary solution with no dependency, I don't pack the module.
+Just download the code and copy the dir "locks_for_pytorch_on_gpus" into your project and use it!
+
+## Usage
 Normally you just need to call the get_locks function before using Pytorch on GPUs.
 ```python 2.7
 from locks_for_pytorch_on_gpus import acquire_locks, DeviceIsBusyException
