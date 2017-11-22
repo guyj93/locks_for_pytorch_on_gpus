@@ -1,4 +1,4 @@
-from __init__ import acquire_locks, release_locks, DEFAULT_LOG_DIR, DeviceIsBusyException
+from locks_for_pytorch_on_gpus import acquire_locks, release_locks, DEFAULT_LOG_DIR, DeviceIsBusyException
 import os
 
 
