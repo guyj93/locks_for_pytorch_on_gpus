@@ -6,7 +6,8 @@ And the dead lock will cause the GPU become not usable until the whole system re
 Thus, I develop this tool to avoid the condition happens.
 
 ## Requirements
-Linux
+Linux (The abstract sockets are used to create locks)
+
 Python2.7
 
 ## Installation
