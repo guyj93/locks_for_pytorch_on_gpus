@@ -1,5 +1,5 @@
 # Python Locks for Safely Using Pytorch On Multiple GPUs
-If multiple processes using pytorch on multi-GPUs,
+If there are multiple processes using pytorch on multi-GPUs,
 a dead lock will happen on the GPU used by multiple processes.
 And the dead lock will cause the GPU become not usable until the whole system reboots.
 
