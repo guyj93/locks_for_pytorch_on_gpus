@@ -31,4 +31,4 @@ except DeviceIsBusyException, e:
     print e
 
 ```
-Please read the test script for examples.
+Please read the test script for more examples.
