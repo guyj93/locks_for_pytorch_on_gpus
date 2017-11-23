@@ -15,7 +15,7 @@ As an temporary solution with no dependency, I don't pack the module.
 Please download the code and copy the directory "locks_for_pytorch_on_gpus" into your project!
 
 ## Usage
-Normally you just need to call the get_locks function before using Pytorch on GPUs.
+Normally you just need to call the acquire_locks function before using Pytorch on GPUs.
 For example, open an python console and input:
 ```python
 from locks_for_pytorch_on_gpus import acquire_locks
